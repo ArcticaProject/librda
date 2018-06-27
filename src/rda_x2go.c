@@ -47,23 +47,15 @@ rda_session_suspend_x2go(void)
 	if (!rda_session_is_x2go())
 		return FALSE;
 
-	gint std_in, std_out;
-	GError * error = NULL;
+        gint exit_status = 0;
+	gchar *std_out, *std_err;
+	GError *error = NULL;
 
-	const gchar * argv[1];
-	argv[0] = "x2gosuspend-session";
-
-	// FIXME: use g_spawn_sync
-	g_spawn_async_with_pipes(NULL, /* pwd */
-	                         (gchar **)argv,
-	                         NULL, /* env */
-	                         G_SPAWN_DO_NOT_REAP_CHILD,
-	                         NULL, NULL, /* child setup */
-	                         NULL,
-	                         &std_in,
-	                         &std_out,
-	                         NULL, /* stderr */
-	                         &error); /* error */
+	g_spawn_command_line_sync("x2gosuspend-session",
+                                  &std_out,
+                                  &std_err,
+                                  &exit_status,
+                                  &error);
 
 	if (error == NULL)
 	{
@@ -81,23 +73,15 @@ rda_session_terminate_x2go(void)
 	if (!rda_session_is_x2go())
 		return FALSE;
 
-	gint std_in, std_out;
+	gint exit_status = 0;
+	gchar *std_out, *std_err;
 	GError * error = NULL;
 
-	const gchar * argv[1];
-	argv[0] = "x2goterminate-session";
-
-	// FIXME: use g_spawn_sync
-	g_spawn_async_with_pipes(NULL, /* pwd */
-	                         (gchar **)argv,
-	                         NULL, /* env */
-	                         G_SPAWN_DO_NOT_REAP_CHILD,
-	                         NULL, NULL, /* child setup */
-	                         NULL,
-	                         &std_in,
-	                         &std_out,
-	                         NULL, /* stderr */
-	                         &error); /* error */
+	g_spawn_command_line_sync("x2goterminate-session",
+                                  &std_out,
+                                  &std_err,
+                                  &exit_status,
+                                  &error);
 
 	if (error == NULL)
 	{
