@@ -1,0 +1,4 @@
+usr/include
+usr/lib/*/pkgconfig/rda.pc
+usr/lib/*/librda.a
+usr/lib/*/librda.so

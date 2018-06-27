@@ -1,0 +1,194 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: librda
+Upstream-Contact: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Source: https://github.com/ArcticaProject/librda
+
+Files: ChangeLog
+ Makefile.am
+ configure.ac
+ m4/.placeholder
+ po/LINGUAS
+ po/Makefile.in.in
+ po/POTFILES.in
+ src/Makefile.am
+ src/rda.pc.in
+ tests/Makefile.am
+Copyright: 2018, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+License: LGPL-2+
+Comment:
+ Assuming license as found in COPYING file.
+ .
+ Assuming copyright holdership as found in majority of code files.
+
+Files: src/rda.c
+ src/rda.h
+ src/rda_x2go.c
+ src/rda_x2go.h
+ tests/test-x2go.c
+Copyright: 2018, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+License: LGPL-2+
+
+Files: update-po.sh
+ update-pot.sh
+Copyright: 2017, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+License: GPL-3
+
+Files: po/af.po
+ po/am.po
+ po/an.po
+ po/ar.po
+ po/ast.po
+ po/az.po
+ po/be.po
+ po/bem.po
+ po/bg.po
+ po/bn.po
+ po/bo.po
+ po/br.po
+ po/bs.po
+ po/ca.po
+ po/ca@valencia.po
+ po/ce.po
+ po/ckb.po
+ po/co.po
+ po/crh.po
+ po/cs.po
+ po/cv.po
+ po/cy.po
+ po/da.po
+ po/de.po
+ po/el.po
+ po/en_AU.po
+ po/en_CA.po
+ po/en_GB.po
+ po/eo.po
+ po/es.po
+ po/et.po
+ po/eu.po
+ po/fa.po
+ po/fi.po
+ po/fil.po
+ po/fo.po
+ po/fr.po
+ po/fr_CA.po
+ po/frp.po
+ po/fy.po
+ po/ga.po
+ po/gd.po
+ po/gl.po
+ po/gu.po
+ po/he.po
+ po/hi.po
+ po/hr.po
+ po/ht.po
+ po/hu.po
+ po/hy.po
+ po/ia.po
+ po/id.po
+ po/is.po
+ po/it.po
+ po/ja.po
+ po/ka.po
+ po/kk.po
+ po/kl.po
+ po/km.po
+ po/kn.po
+ po/ko.po
+ po/ku.po
+ po/kw.po
+ po/ky.po
+ po/la.po
+ po/lb.po
+ po/lo.po
+ po/lt.po
+ po/lv.po
+ po/mg.po
+ po/mhr.po
+ po/mi.po
+ po/ml.po
+ po/mr.po
+ po/ms.po
+ po/my.po
+ po/nb.po
+ po/ne.po
+ po/nl.po
+ po/nn.po
+ po/oc.po
+ po/os.po
+ po/pa.po
+ po/pl.po
+ po/ps.po
+ po/pt.po
+ po/pt_BR.po
+ po/ro.po
+ po/ru.po
+ po/sa.po
+ po/sc.po
+ po/sd.po
+ po/se.po
+ po/shn.po
+ po/si.po
+ po/sk.po
+ po/sl.po
+ po/sq.po
+ po/sr.po
+ po/sv.po
+ po/sw.po
+ po/szl.po
+ po/ta.po
+ po/te.po
+ po/tg.po
+ po/th.po
+ po/ti.po
+ po/tr.po
+ po/ug.po
+ po/uk.po
+ po/ur.po
+ po/uz.po
+ po/vi.po
+ po/wae.po
+ po/zh_CN.po
+ po/zh_HK.po
+ po/zh_TW.po
+Copyright: 2018, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+License: LGPL-2+
+Comment:
+ Using same license and copyright holdership as given for the
+ RDA shared library.
+
+Files: debian/*
+Copyright: 2018, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+License: LGPL-2+ or GPL-3
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: GPL-3
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 3 of the License.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".

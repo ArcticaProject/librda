@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+bindir=@bindir@
+includedir=@includedir@
+
+Cflags: -I${includedir}/rda
+Libs: -lrda
+
+Name: librda
+Description: Remote Desktop Awareness
+Version: @VERSION@

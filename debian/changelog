@@ -1,0 +1,6 @@
+librda (0.0.1-0) UNRELEASED; urgency=medium
+
+  * Upstream-provided Debian package for librda.
+    See upstream ChangeLog for recent changes.
+
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Wed, 27 Jun 2018 10:41:13 +0200
