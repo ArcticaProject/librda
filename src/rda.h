@@ -55,7 +55,10 @@ gboolean
 rda_session_can_be_suspended(void);
 
 gboolean
-rda_suspend_session(void);
+rda_session_suspend(void);
+
+gboolean
+rda_session_terminate(void);
 
 G_END_DECLS
 
