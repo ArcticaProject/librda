@@ -4,7 +4,7 @@ libdir=@libdir@
 bindir=@bindir@
 includedir=@includedir@
 
-Cflags: -I${includedir}/rda
+Cflags: -I${includedir}
 Libs: -lrda
 
 Name: librda
