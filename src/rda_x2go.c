@@ -52,10 +52,10 @@ rda_session_suspend_x2go(void)
 	GError *error = NULL;
 
 	g_spawn_command_line_sync("x2gosuspend-session",
-                                  &std_out,
-                                  &std_err,
-                                  &exit_status,
-                                  &error);
+	                          &std_out,
+	                          &std_err,
+	                          &exit_status,
+	                          &error);
 
 	if (error == NULL)
 	{
@@ -78,10 +78,10 @@ rda_session_terminate_x2go(void)
 	GError * error = NULL;
 
 	g_spawn_command_line_sync("x2goterminate-session",
-                                  &std_out,
-                                  &std_err,
-                                  &exit_status,
-                                  &error);
+	                          &std_out,
+	                          &std_err,
+	                          &exit_status,
+	                          &error);
 
 	if (error == NULL)
 	{
