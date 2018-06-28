@@ -40,10 +40,16 @@ rda_init (void)
 gboolean
 rda_session_is_local(void)
 {
-	/*
-	 * FIXME: how can we detect that a desktop session is running locally?
-	 */
-	return (!rda_session_is_remote());
+	if (remote_technology == REMOTE_TECHNOLOGY_NONE)
+		return TRUE;
+
+	if (g_getenv("XDG_SEAT"))
+	{
+		remote_technology = REMOTE_TECHNOLOGY_NONE;
+		return TRUE;
+	}
+
+	return FALSE;
 }
 
 gboolean
