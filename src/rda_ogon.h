@@ -1,6 +1,6 @@
 /* -*- Mode: C; c-set-style: linux indent-tabs-mode: t; c-basic-offset: 8; tab-width: 8 -*- */
 
-/* rda.h - Remote Desktop Awareness
+/* rda_x2go.c - Remote Desktop Awareness for Ogon RDP Sessions
 
    Copyright (C) 2018 Mike Gabriel
    All rights reserved.
@@ -18,49 +18,24 @@
    You should have received a copy of the GNU Library General Public
    License along with the Mate Library; see the file COPYING.LIB.  If not,
    write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
-   Boston, MA  02110-1301, USA.
+   Boston, MA 02110-1301, USA.
  */
 
-#ifndef RDA_H
-#define RDA_H
+#ifndef RDA_OGON_H
+#define RDA_OGON_H
 
-G_BEGIN_DECLS
+#include <config.h>
+#include <glib.h>
 
-enum {
-	REMOTE_TECHNOLOGY_UNCHECKED,
-	REMOTE_TECHNOLOGY_NONE,
-	REMOTE_TECHNOLOGY_UNKNOWN,
-	REMOTE_TECHNOLOGY_X2GO,
-	REMOTE_TECHNOLOGY_OGON,
-};
-
-extern guint
-remote_technology;
-
-void
-rda_init (void);
+#include <rda.h>
 
 gboolean
-rda_session_is_local(void);
+rda_session_is_ogon (void);
 
 gboolean
-rda_session_is_remote (void);
-
-guint
-rda_get_remote_technology(void);
-
-gchar *
-rda_get_remote_technology_name (void);
+rda_session_suspend_ogon (void);
 
 gboolean
-rda_session_can_be_suspended(void);
+rda_session_terminate_ogon (void);
 
-gboolean
-rda_session_suspend(void);
-
-gboolean
-rda_session_terminate(void);
-
-G_END_DECLS
-
-#endif /* RDA_H */
+#endif /* RDA_OGON_H */

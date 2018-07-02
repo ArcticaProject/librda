@@ -26,6 +26,7 @@
 #include <glib/gi18n.h>
 
 #include <rda.h>
+#include <rda_ogon.h>
 #include <rda_x2go.h>
 
 guint
@@ -56,6 +57,9 @@ gboolean
 rda_session_is_remote (void)
 {
 	if (rda_session_is_x2go())
+		return TRUE;
+
+	if (rda_session_is_ogon())
 		return TRUE;
 
 	/* possibly add more checks for other remote desktop technologies */
@@ -96,6 +100,10 @@ rda_get_remote_technology_name (void)
 			remote_technology_name = _("X2Go");
 			break;
 
+		case REMOTE_TECHNOLOGY_OGON:
+			remote_technology_name = _("OgonRDP");
+			break;
+
 		case REMOTE_TECHNOLOGY_UNKNOWN:
 			remote_technology_name = _("unknown");
 
@@ -113,6 +121,9 @@ rda_session_can_be_suspended(void)
 	if (rda_session_is_x2go())
 		return TRUE;
 
+	if (rda_session_is_ogon())
+		return TRUE;
+
 	/* possibly add more checks for other remote desktop frameworks
 	   that have a session suspension feature */
 
@@ -125,6 +136,9 @@ rda_session_suspend(void)
 	if (rda_session_is_x2go())
 		return rda_session_suspend_x2go();
 
+	if (rda_session_is_ogon())
+		return rda_session_suspend_ogon();
+
 	return FALSE;
 }
 
@@ -133,6 +147,9 @@ rda_session_terminate(void)
 {
 	if (rda_session_is_x2go())
 		return rda_session_terminate_x2go();
+
+	if (rda_session_is_ogon())
+		return rda_session_terminate_ogon();
 
 	return FALSE;
 }
