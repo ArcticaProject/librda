@@ -1,4 +1,17 @@
 #!/usr/bin/make -f
 
+NULL=
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
 %:
-	dh $@ --with autoreconf
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure $(DHFLAGS) --		\
+	        --disable-silent-rules		\
+	        --enable-x2go			\
+	        --enable-ogon			\
+	        $(NULL)
