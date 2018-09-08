@@ -56,6 +56,26 @@ dnl pkg-config dependency checks
 
 PKG_CHECK_MODULES(LIBRDA, glib-2.0 >= $GLIB_REQUIRED gio-2.0 >= $GIO_REQUIRED)
 
+dnl enable/disable awarenesses
+
+AC_ARG_ENABLE([x2go],
+              [AS_HELP_STRING([--enable-x2go],
+                              [enable awareness of X2Go sessions])],
+              [enable_x2go=yes],
+              [enable_x2go=no])
+if test "x$enable_x2go" != "x"; then
+    AC_DEFINE([WITH_X2GO_AWARENESS],,[Build with X2Go awareness])
+fi
+
+AC_ARG_ENABLE([ogon],
+              [AS_HELP_STRING([--enable-ogon],
+                              [enable awareness of Ogon sessions])],
+              [enable_ogon=yes],
+              [enable_ogon=no])
+if test "x$enable_ogon" != "x"; then
+    AC_DEFINE([WITH_OGON_AWARENESS],,[Build with Ogon awareness])
+fi
+
 dnl Language Support
 
 IT_PROG_INTLTOOL([0.50.1])
@@ -109,4 +129,7 @@ librda $VERSION
     Use *_DISABLE_DEPRECATED:     ${enable_deprecation_flags}
 
     Build introspection support:  ${found_introspection}
+
+    Enable X2Go awareness         ${enable_x2go}
+    Enable Ogon awareness         ${enable_ogon}
 "

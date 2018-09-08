@@ -29,6 +29,8 @@
 
 #include <rda.h>
 
+#ifdef WITH_OGON_AWARENESS
+
 gboolean
 rda_session_is_ogon (void);
 
@@ -37,5 +39,7 @@ rda_session_suspend_ogon (void);
 
 gboolean
 rda_session_terminate_ogon (void);
+
+#endif /* WITH_OGON_AWARENESS */
 
 #endif /* RDA_OGON_H */

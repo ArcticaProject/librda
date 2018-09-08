@@ -56,11 +56,16 @@ rda_session_is_local(void)
 gboolean
 rda_session_is_remote (void)
 {
+
+#ifdef WITH_X2GO_AWARENESS
 	if (rda_session_is_x2go())
 		return TRUE;
+#endif
 
+#ifdef WITH_OGON_AWARENESS
 	if (rda_session_is_ogon())
 		return TRUE;
+#endif
 
 	/* possibly add more checks for other remote desktop technologies */
 
@@ -96,13 +101,17 @@ rda_get_remote_technology_name (void)
 			remote_technology_name = _("local");
 			break;
 
+#ifdef WITH_X2GO_AWARENESS
 		case REMOTE_TECHNOLOGY_X2GO:
 			remote_technology_name = _("X2Go");
 			break;
+#endif
 
+#ifdef WITH_OGON_AWARENESS
 		case REMOTE_TECHNOLOGY_OGON:
 			remote_technology_name = _("OgonRDP");
 			break;
+#endif
 
 		case REMOTE_TECHNOLOGY_UNKNOWN:
 			remote_technology_name = _("unknown");
@@ -118,11 +127,15 @@ rda_get_remote_technology_name (void)
 gboolean
 rda_session_can_be_suspended(void)
 {
+#ifdef WITH_X2GO_AWARENESS
 	if (rda_session_is_x2go())
 		return TRUE;
+#endif
 
+#ifdef WITH_OGON_AWARENESS
 	if (rda_session_is_ogon())
 		return TRUE;
+#endif
 
 	/* possibly add more checks for other remote desktop frameworks
 	   that have a session suspension feature */
@@ -133,11 +146,15 @@ rda_session_can_be_suspended(void)
 gboolean
 rda_session_suspend(void)
 {
+#ifdef WITH_X2GO_AWARENESS
 	if (rda_session_is_x2go())
 		return rda_session_suspend_x2go();
+#endif
 
+#ifdef WITH_OGON_AWARENESS
 	if (rda_session_is_ogon())
 		return rda_session_suspend_ogon();
+#endif
 
 	return FALSE;
 }
@@ -145,11 +162,15 @@ rda_session_suspend(void)
 gboolean
 rda_session_terminate(void)
 {
+#ifdef WITH_X2GO_AWARENESS
 	if (rda_session_is_x2go())
 		return rda_session_terminate_x2go();
+#endif
 
+#ifdef WITH_OGON_AWARENESS
 	if (rda_session_is_ogon())
 		return rda_session_terminate_ogon();
+#endif
 
 	return FALSE;
 }
