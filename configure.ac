@@ -46,7 +46,7 @@ if test "x$enable_deprecation_flags" = "xyes"; then
    AC_SUBST(DISABLE_DEPRECATED_CFLAGS)
 fi
 
-GLIB_REQUIRED=2.50.0
+GLIB_REQUIRED=2.37.0
 GIO_REQUIRED=2.26.0
 GTK3_REQUIRED_VERSION=3.6
 
