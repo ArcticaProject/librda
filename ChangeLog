@@ -1,0 +1,112 @@
+2018-09-08 23:35:35 +0200 Mike Gabriel (5525fb6)
+
+	* release 0.0.1 (HEAD -> master, tag: 0.0.1)
+
+2018-09-08 23:16:59 +0200 Mike Gabriel (e9f60c0)
+
+	* debian/copyright: Add .pot file to copyright.
+
+2018-09-08 23:16:41 +0200 Mike Gabriel (0c7295f)
+
+	* debian/rules: Typo fix.
+
+2018-09-08 23:03:07 +0200 Mike Gabriel (675a2dd)
+
+	* debian/control: Use GH URLs in Vcs-*: fields.
+
+2018-09-08 23:01:45 +0200 Mike Gabriel (1fc1cb2)
+
+	* debian/copyright: Use secure URL in Format: field.
+
+2018-09-08 22:59:39 +0200 Mike Gabriel (7ae0753)
+
+	* debian/control: Add pkg-config to B-Ds.
+
+2018-09-08 22:59:14 +0200 Mike Gabriel (2908362)
+
+	* debian/control: Bump Standards-Version: to 4.2.1. No changes
+          needed.
+
+2018-09-08 22:57:40 +0200 Mike Gabriel (a99b872)
+
+	* debian/rules: Keep --with-autoreconf, as we build with DH compat
+          level 9 (for stretch compatibility).
+
+2018-09-08 22:51:07 +0200 Mike Gabriel (4d78301)
+
+	* po/de.po: Update German translation.
+
+2018-09-08 22:50:11 +0200 Mike Gabriel (8e6f85c)
+
+	* po/: Merge new .pot template into translation files.
+
+2018-09-08 22:48:44 +0200 Mike Gabriel (574c248)
+
+	* po/librda.pot: Update translation template.
+
+2018-09-08 22:48:26 +0200 Mike Gabriel (aff4dc2)
+
+	* debian/copyright: Update copyright attributions.
+
+2018-09-08 22:48:06 +0200 Mike Gabriel (001aa2e)
+
+	* debian/rules: Enable X2Go and Ogon awareness. Enable all hardening
+          build flags.
+
+2018-09-08 22:39:13 +0200 Mike Gabriel (b3c03d9)
+
+	* configure.ac: Replace deprecated by AC_HELP_STRING by
+          AS_HELP_STRING.
+
+2018-09-08 21:19:38 +0200 Mike Gabriel (9b5d2bf)
+
+	* configure.ac et al.: Make it possible to enable/disable awareness
+          for the supported remote desktop technologies at build
+          time.
+
+2018-09-08 14:45:01 +0200 Mike Gabriel (d087cb3)
+
+	* configure.ac: Be happy with GLib-2.0 >= 2.37. Should be sufficient
+          (resolves FTBFS on Ubuntu 16.04).
+
+2018-09-08 14:33:01 +0200 Mike Gabriel (b1b804c)
+
+	* src/*.h: Fix file names in comment header.
+
+2018-09-08 12:19:07 +0200 Mike Gabriel (195bc94)
+
+	* debian/control: Add B-D: gobject-introspection.
+
+2018-07-02 16:14:10 +0200 Mike Gabriel (c74a30b)
+
+	* Ogon RDP support: initial draft to support Ogon RDP as remote
+          desktop technology.
+
+2018-06-28 15:28:32 +0200 Mike Gabriel (e21efc9)
+
+	* src/rda_x2go.c: Some tab stop fixes.
+
+2018-06-28 15:27:32 +0200 Mike Gabriel (2b9bd5c)
+
+	* src/rda.c: Report a desktop session as local, if XDG_SEAT env var
+          is set in the session. Good enough for a start, I guess.
+
+2018-06-27 12:36:04 +0000 Mike Gabriel (eaaefb9)
+
+	* src/rda_x2go.c: Use g_spawn_command_line_sync() for
+          suspending/terminating X2Go Sessions.
+
+2018-06-27 11:34:04 +0000 Mike Gabriel (cd1f301)
+
+	* src/rda.pc.in: Make people use <rda/rda.h> in include headers,
+          rather than <rda.h>.
+
+2018-06-27 11:22:51 +0000 Mike Gabriel (a93280d)
+
+	* src/rda.h: Fix prototype for rda_session_suspend(). Add prototype
+          for rda_session_terminate().
+
+2018-06-27 11:04:15 +0200 Mike Gabriel (670a132)
+
+	* initial draft of the RDA shared library
+
