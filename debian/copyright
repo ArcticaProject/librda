@@ -35,7 +35,8 @@ Files: update-po.sh
 Copyright: 2017, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 License: GPL-3
 
-Files: po/af.po
+Files: po/librda.pot
+ po/af.po
  po/am.po
  po/an.po
  po/ar.po
