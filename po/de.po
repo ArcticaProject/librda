@@ -19,16 +19,16 @@ msgstr ""
 
 #: ../src/rda.c:101
 msgid "local"
-msgstr ""
+msgstr "lokal"
 
 #: ../src/rda.c:106
 msgid "X2Go"
-msgstr ""
+msgstr "X2Go"
 
 #: ../src/rda.c:112
 msgid "OgonRDP"
-msgstr ""
+msgstr "OgonRDP"
 
 #: ../src/rda.c:117
 msgid "unknown"
-msgstr ""
+msgstr "unbekannt"
