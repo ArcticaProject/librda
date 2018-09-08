@@ -1,6 +1,6 @@
 /* -*- Mode: C; c-set-style: linux indent-tabs-mode: t; c-basic-offset: 8; tab-width: 8 -*- */
 
-/* rda_x2go.c - Remote Desktop Awareness for Ogon RDP Sessions
+/* rda_ogon.h - Remote Desktop Awareness for Ogon RDP Sessions
 
    Copyright (C) 2018 Mike Gabriel
    All rights reserved.

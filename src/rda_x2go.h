@@ -1,6 +1,6 @@
 /* -*- Mode: C; c-set-style: linux indent-tabs-mode: t; c-basic-offset: 8; tab-width: 8 -*- */
 
-/* rda_x2go.c - Remote Desktop Awareness for X2Go Sessions
+/* rda_x2go.h - Remote Desktop Awareness for X2Go Sessions
 
    Copyright (C) 2018 Mike Gabriel
    All rights reserved.
