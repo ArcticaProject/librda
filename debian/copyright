@@ -24,6 +24,8 @@ Files: src/rda.c
  src/rda.h
  src/rda_x2go.c
  src/rda_x2go.h
+ src/rda_ogon.c
+ src/rda_ogon.h
  tests/test-x2go.c
 Copyright: 2018, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 License: LGPL-2+
