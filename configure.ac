@@ -37,7 +37,7 @@ AC_PROG_LIBTOOL
 PKG_PROG_PKG_CONFIG
 
 AC_ARG_ENABLE(deprecation_flags,
-              [AC_HELP_STRING([--enable-deprecation-flags],
+              [AS_HELP_STRING([--enable-deprecation-flags],
                               [use *_DISABLE_DEPRECATED flags @<:@default=no@:>@])],,
               [enable_deprecation_flags=no])
 
