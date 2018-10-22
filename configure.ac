@@ -61,8 +61,7 @@ dnl enable/disable awarenesses
 AC_ARG_ENABLE([x2go],
               [AS_HELP_STRING([--enable-x2go],
                               [enable awareness of X2Go sessions])],
-              [enable_x2go=yes],
-              [enable_x2go=no])
+              [enable_x2go=yes])
 if test "x$enable_x2go" != "x"; then
     AC_DEFINE([WITH_X2GO_AWARENESS],,[Build with X2Go awareness])
 fi
@@ -70,8 +69,7 @@ fi
 AC_ARG_ENABLE([ogon],
               [AS_HELP_STRING([--enable-ogon],
                               [enable awareness of Ogon sessions])],
-              [enable_ogon=yes],
-              [enable_ogon=no])
+              [enable_ogon=yes])
 if test "x$enable_ogon" != "x"; then
     AC_DEFINE([WITH_OGON_AWARENESS],,[Build with Ogon awareness])
 fi
