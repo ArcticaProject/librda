@@ -16,8 +16,8 @@ librdainclude_HEADERS =			\
 
 librda_la_SOURCES =			\
 	rda.c				\
-	$(if WITH_X2GO_AWARENESS, rda_x2go.c) \
-	$(if WITH_OGON_AWARENESS, rda_ogon.c) \
+	rda_x2go.c			\
+	rda_ogon.c			\
 	$(NULL)
 
 librda_la_CFLAGS =			\
