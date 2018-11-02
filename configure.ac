@@ -64,6 +64,8 @@ AC_ARG_ENABLE([x2go],
               [enable_x2go=yes])
 if test "x$enable_x2go" != "x"; then
     AC_DEFINE([WITH_X2GO_AWARENESS],,[Build with X2Go awareness])
+else
+    enable_x2go="no"
 fi
 
 AC_ARG_ENABLE([ogon],
@@ -72,6 +74,8 @@ AC_ARG_ENABLE([ogon],
               [enable_ogon=yes])
 if test "x$enable_ogon" != "x"; then
     AC_DEFINE([WITH_OGON_AWARENESS],,[Build with Ogon awareness])
+else
+    enable_ogon="no"
 fi
 
 dnl Language Support
