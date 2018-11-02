@@ -24,6 +24,8 @@
 #ifndef RDA_H
 #define RDA_H
 
+#include <glib.h>
+
 G_BEGIN_DECLS
 
 enum {
