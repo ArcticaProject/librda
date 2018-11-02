@@ -57,20 +57,19 @@ gboolean
 rda_session_is_remote (void)
 {
 
+	if (rda_session_is_local())
+		remote_technology = REMOTE_TECHNOLOGY_NONE;
 #ifdef WITH_X2GO_AWARENESS
-	if (rda_session_is_x2go())
+	else if (rda_session_is_x2go())
 		return TRUE;
 #endif
 
 #ifdef WITH_OGON_AWARENESS
-	if (rda_session_is_ogon())
+	else if (rda_session_is_ogon())
 		return TRUE;
 #endif
 
 	/* possibly add more checks for other remote desktop technologies */
-
-	else if (rda_session_is_local())
-		remote_technology = REMOTE_TECHNOLOGY_NONE;
 
 	else
 		remote_technology = REMOTE_TECHNOLOGY_UNKNOWN;
