@@ -2,3 +2,4 @@ usr/include
 usr/lib/*/pkgconfig/rda.pc
 usr/lib/*/librda.a
 usr/lib/*/librda.so
+usr/share/gir-1.0/
