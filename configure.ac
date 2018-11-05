@@ -58,12 +58,14 @@ PKG_CHECK_MODULES(LIBRDA, glib-2.0 >= $GLIB_REQUIRED gio-2.0 >= $GIO_REQUIRED)
 
 dnl enable/disable awarenesses
 
+SUPPORTED_TECHNOLOGIES=""
+
 AC_ARG_ENABLE([x2go],
               [AS_HELP_STRING([--enable-x2go],
                               [enable awareness of X2Go sessions])],
               [enable_x2go=yes])
 if test "x$enable_x2go" != "x"; then
-    AC_DEFINE([WITH_X2GO_AWARENESS],,[Build with X2Go awareness])
+    SUPPORTED_TECHNOLOGIES="$SUPPORTED_TECHNOLOGIES X2GO"
 else
     enable_x2go="no"
 fi
@@ -73,10 +75,13 @@ AC_ARG_ENABLE([ogon],
                               [enable awareness of Ogon sessions])],
               [enable_ogon=yes])
 if test "x$enable_ogon" != "x"; then
-    AC_DEFINE([WITH_OGON_AWARENESS],,[Build with Ogon awareness])
+    SUPPORTED_TECHNOLOGIES="$SUPPORTED_TECHNOLOGIES OGON"
 else
     enable_ogon="no"
 fi
+
+# make them available for automake
+AC_SUBST([SUPPORTED_TECHNOLOGIES])
 
 dnl Language Support
 

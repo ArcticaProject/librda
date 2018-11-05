@@ -21,50 +21,10 @@
    Boston, MA  02110-1301, USA.
  */
 
-#ifndef RDA_H
-#define RDA_H
+#ifndef RDA_SUPPORTED_TECHNOLOGIES_H
+#define RDA_SUPPORTED_TECHNOLOGIES_H
 
-#include <glib.h>
+// @WITH_REMOTE_AWARENESS_X2GO@ not supported
+// @WITH_REMOTE_AWARENESS_OGON@ not supported
 
-#include <rda_supported_technologies.h>
-
-G_BEGIN_DECLS
-
-enum {
-	REMOTE_TECHNOLOGY_UNCHECKED,
-	REMOTE_TECHNOLOGY_NONE,
-	REMOTE_TECHNOLOGY_UNKNOWN,
-	REMOTE_TECHNOLOGY_X2GO,
-	REMOTE_TECHNOLOGY_OGON,
-};
-
-extern guint
-remote_technology;
-
-void
-rda_init (void);
-
-gboolean
-rda_session_is_local(void);
-
-gboolean
-rda_session_is_remote (void);
-
-guint
-rda_get_remote_technology(void);
-
-gchar *
-rda_get_remote_technology_name (void);
-
-gboolean
-rda_session_can_be_suspended(void);
-
-gboolean
-rda_session_suspend(void);
-
-gboolean
-rda_session_terminate(void);
-
-G_END_DECLS
-
-#endif /* RDA_H */
+#endif /* RDA_SUPPORTED_TECHNOLOGIES_H */

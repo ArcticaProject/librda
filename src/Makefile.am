@@ -4,8 +4,21 @@ lib_LTLIBRARIES = librda.la
 
 CLEANFILES =
 DISTCLEANFILES =
+EXTRA_DIST =
+BUILT_SOURCES =
+
+st_file = rda_supported_technologies.h
+
+$(st_file): $(st_file).in
+	cp $< $@
+	for tech in $(SUPPORTED_TECHNOLOGIES); do sed -r -e "s|// \@WITH_REMOTE_AWARENESS_($$tech)\@\s+.*|#define WITH_REMOTE_AWARENESS_\1|" -i $@; done
+
+CLEANFILES += $(st_file)
+EXTRA_DIST += $(st_file).in
+BUILT_SOURCES += $(st_file)
 
 rda_headers =				\
+	rda_supported_technologies.h	\
 	rda.h				\
 	$(NULL)
 
