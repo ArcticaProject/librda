@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: librda 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-08 22:49+0200\n"
+"POT-Creation-Date: 2018-11-09 19:12+0100\n"
 "PO-Revision-Date: 2018-11-04 17:23+0000\n"
 "Last-Translator: Kamen <kamenpetrov81@gmail.com>\n"
-"Language-Team: Bulgarian <https://hosted.weblate.org/projects/"
-"arctica-framework/librda/bg/>\n"
+"Language-Team: Bulgarian <https://hosted.weblate.org/projects/arctica-"
+"framework/librda/bg/>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,18 +19,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.3-dev\n"
 
-#: ../src/rda.c:101
+#: ../src/rda.c:100
 msgid "local"
 msgstr "местен"
 
-#: ../src/rda.c:106
+#: ../src/rda.c:105
 msgid "X2Go"
 msgstr "X2Go"
 
-#: ../src/rda.c:112
+#: ../src/rda.c:111
 msgid "OgonRDP"
 msgstr "OgonRDP"
 
-#: ../src/rda.c:117
+#: ../src/rda.c:116
 msgid "unknown"
 msgstr "неизвестно"

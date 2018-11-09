@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-08 22:45+0200\n"
+"POT-Creation-Date: 2018-11-09 19:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/rda.c:101
+#: ../src/rda.c:100
 msgid "local"
 msgstr ""
 
-#: ../src/rda.c:106
+#: ../src/rda.c:105
 msgid "X2Go"
 msgstr ""
 
-#: ../src/rda.c:112
+#: ../src/rda.c:111
 msgid "OgonRDP"
 msgstr ""
 
-#: ../src/rda.c:117
+#: ../src/rda.c:116
 msgid "unknown"
 msgstr ""
