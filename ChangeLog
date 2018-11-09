@@ -1,6 +1,110 @@
-2018-09-08 23:35:35 +0200 Mike Gabriel (5525fb6)
+2018-11-09 19:34:59 +0100 Mike Gabriel (f58283d)
 
-	* release 0.0.1 (HEAD -> master, tag: 0.0.1)
+	* release 0.0.2 (HEAD -> master, tag: 0.0.2)
+
+2018-11-09 19:34:26 +0100 Mike Gabriel (6388ef6)
+
+	* Update translation files.
+
+2018-11-09 12:49:49 +0100 Mike Gabriel (9c0f5f7)
+
+	* src/rda.h: Include rda_supported_technologies.h from local folder.
+
+2018-11-06 00:17:56 +0100 Mike Gabriel (1d87a98)
+
+	* debian/control: Add B-D: libgirepository1.0-dev.
+
+2018-11-06 00:08:30 +0100 Mike Gabriel (45ecc0b)
+
+	* debian/rules: Explicitly enable introspection support.
+
+2018-11-05 23:58:16 +0100 Mike Gabriel (d72ba23)
+
+	* src/rda_supported_technologies.h.in: Generate header file that
+          knows what RDA technologies are supported after build.
+
+2018-11-03 17:07:42 +0000 Kamen (b2554cf)
+
+	* Translated using Weblate (Bulgarian)
+
+2018-11-02 13:23:30 +0100 Mike Gabriel (c7b1a76)
+
+	* debian/*: Add gir1.2-rda-1.0 bin:package.
+
+2018-11-02 13:23:08 +0100 Mike Gabriel (6b5af06)
+
+	* src/Makefile.am: Always compile rda_x2go.c and rda_ogon.c files.
+          This partially reverts 9f217413.
+
+2018-11-02 13:21:48 +0100 Mike Gabriel (5fee3b6)
+
+	* automake: Add GObject Introspection support.
+
+2018-11-02 13:20:32 +0100 Mike Gabriel (cd0a738)
+
+	* src/rda.c: Don't fail if no remote technology is enabled at
+          configure time.
+
+2018-11-02 11:28:10 +0000 Mike Gabriel (85917b9)
+
+	* src/rda_*.c: White-space fix at end of file.
+
+2018-11-02 11:27:48 +0000 Mike Gabriel (238450c)
+
+	* configure.ac: For the configure summary, set enable_<rdp-type>=no
+          if not explicitly enabled.
+
+2018-10-30 17:57:29 +0000 Daniel D McNaughton (9e21707)
+
+	* Translated using Weblate (Russian)
+
+2018-10-22 16:21:45 +0200 Mike Gabriel (b25af68)
+
+	* Merge branch 'rbuj-defines'
+
+2018-10-13 10:06:48 +0200 rbuj (9f21741)
+
+	* librda_la_SOURCES: add conditional sources
+
+2018-10-22 16:19:18 +0200 Mike Gabriel (100f8ad)
+
+	* Merge branch 'rbuj-sources'
+
+2018-10-13 10:06:48 +0200 rbuj (36c36e0)
+
+	* librda_la_SOURCES: add conditional sources
+
+2018-10-12 23:52:29 +0200 rbuj (614e86d)
+
+	* Fix defines: WITH_X2GO_AWARENESS, WITH_OGON_AWARENESS
+
+2018-10-09 22:07:58 +0000 Ricardo A. Hermosilla Carrillo (331a95b)
+
+	* Translated using Weblate (Spanish)
+
+2018-10-01 00:56:05 +0000 Kristoffer Grundström (b1df221)
+
+	* Translated using Weblate (Swedish)
+
+2018-09-27 13:03:23 +0000 Володимир Бриняк (3a0999c)
+
+	* Translated using Weblate (Ukrainian)
+
+2018-09-19 15:41:13 +0000 Viktar Vauchkevich (565c520)
+
+	* Translated using Weblate (Belarusian)
+
+2018-09-12 19:53:04 +0000 Allan Nordhøy (8be46b6)
+
+	* Translated using Weblate (Norwegian Bokmål)
+
+2018-09-11 20:19:05 +0200 Mike Gabriel (e49d1d5)
+
+	* Add COPYING file (LGPL-2+).
+
+2018-09-08 23:35:35 +0200 Mike Gabriel (706db45)
+
+	* release 0.0.1 (tag: 0.0.1)
 
 2018-09-08 23:16:59 +0200 Mike Gabriel (e9f60c0)
 
