@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: librda 0.0.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-09 19:13+0100\n"
-"PO-Revision-Date: 2019-01-09 15:05+0000\n"
+"PO-Revision-Date: 2019-01-12 17:06+0000\n"
 "Last-Translator: Louies <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "arctica-framework/librda/zh_Hant/>\n"
@@ -24,12 +24,10 @@ msgid "local"
 msgstr "當地"
 
 #: ../src/rda.c:105
-#, fuzzy
 msgid "X2Go"
 msgstr "X2Go"
 
 #: ../src/rda.c:111
-#, fuzzy
 msgid "OgonRDP"
 msgstr "OgonRDP"
 
