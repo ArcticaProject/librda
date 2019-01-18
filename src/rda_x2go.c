@@ -2,7 +2,7 @@
 
 /* rda_x2go.c - Remote Desktop Awareness for X2Go Sessions
 
-   Copyright (C) 2018 Mike Gabriel
+   Copyright (C) 2018-2019 Mike Gabriel
    All rights reserved.
 
    The RDA Library is free software; you can redistribute it and/or
