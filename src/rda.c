@@ -173,3 +173,18 @@ rda_session_terminate(void)
 
 	return FALSE;
 }
+
+gchar *
+rda_supported_technologies(void)
+{
+
+	g_autofree gchar * technologies;
+
+#ifdef WITH_REMOTE_AWARENESS_X2GO
+	g_message("RDA supports (stable): %s", rda_remote_technology_name_x2go());
+#endif
+
+#ifdef WITH_REMOTE_AWARENESS_OGON
+	g_message("RDA supports (alpha): %s", rda_remote_technology_name_ogon());
+#endif
+}

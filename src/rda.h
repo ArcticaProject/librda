@@ -65,6 +65,9 @@ rda_session_suspend(void);
 gboolean
 rda_session_terminate(void);
 
+gchar *
+rda_supported_technologies(void);
+
 G_END_DECLS
 
 #endif /* RDA_H */
