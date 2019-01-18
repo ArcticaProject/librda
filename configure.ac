@@ -97,6 +97,7 @@ Makefile
 po/Makefile.in
 src/Makefile
 src/rda.pc
+util/Makefile
 tests/Makefile
 ])
 
