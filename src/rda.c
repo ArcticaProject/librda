@@ -174,17 +174,33 @@ rda_session_terminate(void)
 	return FALSE;
 }
 
-gchar *
+GList *
 rda_supported_technologies(void)
 {
-
-	g_autofree gchar * technologies;
+	GList * tech_list;
 
 #ifdef WITH_REMOTE_AWARENESS_X2GO
-	g_message("RDA supports (stable): %s", rda_remote_technology_name_x2go());
+	tech_list = g_list_append (tech_list,  GINT_TO_POINTER(REMOTE_TECHNOLOGY_X2GO));
 #endif
 
 #ifdef WITH_REMOTE_AWARENESS_OGON
-	g_message("RDA supports (alpha): %s", rda_remote_technology_name_ogon());
+	tech_list = g_list_append (tech_list,  GINT_TO_POINTER(REMOTE_TECHNOLOGY_OGON));
 #endif
+
+	return tech_list;
+}
+
+GList *
+rda_supported_technologies_by_name(void)
+{
+	GList * tech_list_by_name;
+
+#ifdef WITH_REMOTE_AWARENESS_X2GO
+	tech_list_by_name = g_list_append (tech_list_by_name, rda_remote_technology_name_x2go());
+#endif
+
+#ifdef WITH_REMOTE_AWARENESS_OGON
+	tech_list_by_name = g_list_append (tech_list_by_name, rda_remote_technology_name_ogon());
+#endif
+	return tech_list_by_name;
 }

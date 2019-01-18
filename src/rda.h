@@ -65,8 +65,11 @@ rda_session_suspend(void);
 gboolean
 rda_session_terminate(void);
 
-gchar *
+GList *
 rda_supported_technologies(void);
+
+GList *
+rda_supported_technologies_by_name(void);
 
 G_END_DECLS
 
