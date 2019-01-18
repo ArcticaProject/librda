@@ -1,7 +1,7 @@
 /*
-X2Go tests for librda
+rdacheck utility for librda
 
-Copyright 2018, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Copyright 2019, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 
    Copyright (C) 2018 Mike Gabriel
    All rights reserved.
