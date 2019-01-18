@@ -26,7 +26,7 @@
 
 #include <rda.h>
 
-#ifdef WITH_X2GO_AWARENESS
+#ifdef WITH_REMOTE_AWARENESS_X2GO
 
 gboolean
 rda_session_is_x2go (void)
@@ -95,4 +95,4 @@ rda_session_terminate_x2go(void)
 	}
 }
 
-#endif /* WITH_X2GO_AWARENESS */
+#endif /* WITH_REMOTE_AWARENESS_X2GO */
