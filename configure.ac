@@ -94,6 +94,7 @@ AM_GLIB_GNU_GETTEXT
 
 AC_CONFIG_FILES([
 Makefile
+data/Makefile
 po/Makefile.in
 src/Makefile
 src/rda.pc

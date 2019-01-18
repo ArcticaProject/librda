@@ -1,0 +1,18 @@
+.TH RDA 1 "Jan 17, 2019"
+.SH NAME
+rdacheck \- RDA check utility
+.SH SYNOPSIS
+.B rdacheck
+[
+.I OPTIONS
+]
+.SH DESCRIPTION
+.B Remote Desktop Awareness (RDA)
+is a shared library that can make a desktop environment aware of being
+run inside a remote desktop session, such as X2Go or OgonRDP. A desktop
+session that is aware of its (remote) context, can, if needed, be
+programmed to adapt to the graphical technology it is being run on.
+.PP
+The \fBrdacheck\fR utility can be used inside the desktop session to report
+the characteristics of the session that RDA is aware of.
+.PP

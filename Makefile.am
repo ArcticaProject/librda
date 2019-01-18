@@ -1,4 +1,4 @@
-SUBDIRS = src util po
+SUBDIRS = data src util po
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
