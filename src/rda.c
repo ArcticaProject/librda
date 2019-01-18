@@ -102,13 +102,13 @@ rda_get_remote_technology_name (void)
 
 #ifdef WITH_REMOTE_AWARENESS_X2GO
 		case REMOTE_TECHNOLOGY_X2GO:
-			remote_technology_name = _("X2Go");
+			remote_technology_name = rda_remote_technology_name_x2go();
 			break;
 #endif
 
 #ifdef WITH_REMOTE_AWARENESS_OGON
 		case REMOTE_TECHNOLOGY_OGON:
-			remote_technology_name = _("OgonRDP");
+			remote_technology_name = rda_remote_technology_name_ogon();
 			break;
 #endif
 

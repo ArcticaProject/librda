@@ -34,6 +34,9 @@
 gboolean
 rda_session_is_ogon (void);
 
+gchar *
+rda_remote_technology_name_ogon(void);
+
 gboolean
 rda_session_suspend_ogon (void);
 

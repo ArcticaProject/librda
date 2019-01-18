@@ -34,6 +34,9 @@
 gboolean
 rda_session_is_x2go (void);
 
+gchar *
+rda_remote_technology_name_x2go(void);
+
 gboolean
 rda_session_suspend_x2go(void);
 

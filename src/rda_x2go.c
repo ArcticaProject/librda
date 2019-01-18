@@ -23,6 +23,7 @@
 
 #include <config.h>
 #include <glib.h>
+#include <glib/gi18n.h>
 
 #include <rda.h>
 
@@ -41,6 +42,12 @@ rda_session_is_x2go (void)
 	}
 
 	return FALSE;
+}
+
+gchar *
+rda_remote_technology_name_x2go(void)
+{
+	return _("X2Go");
 }
 
 gboolean
