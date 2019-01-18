@@ -26,7 +26,7 @@
 
 #include <glib.h>
 
-#include "rda_supported_technologies.h"
+#include <rda_supported_technologies.h>
 
 G_BEGIN_DECLS
 
