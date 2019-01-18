@@ -1,9 +1,9 @@
+/* -*- Mode: C; c-set-style: linux indent-tabs-mode: t; c-basic-offset: 8; tab-width: 8 -*- */
+
 /*
 X2Go tests for librda
 
-Copyright 2018, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
-
-   Copyright (C) 2018 Mike Gabriel
+   Copyright (C) 2018-2019 Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
    All rights reserved.
 
    The RDA Library is free software; you can redistribute it and/or
