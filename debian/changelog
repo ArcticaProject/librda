@@ -1,4 +1,4 @@
-librda (0.0.1-0) unstable; urgency=medium
+librda (0.0.2-0) unstable; urgency=medium
 
   * Upstream-provided Debian package for librda.
     See upstream ChangeLog for recent changes.
