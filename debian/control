@@ -56,3 +56,14 @@ Description: GObject introspection data for librda
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
+
+Package: librda-bin
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Multi-Arch: foreign
+Description: Remote Desktop Awareness (utility)
+ This library provides an API for detecting if a desktop session
+ is running inside a remote desktop session (e.g. X2Go).
+ .
+ This package contains the RDA check utility.
