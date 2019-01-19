@@ -6,6 +6,8 @@ Source: https://github.com/ArcticaProject/librda
 Files: ChangeLog
  Makefile.am
  configure.ac
+ data/Makefile.am
+ data/rdacheck.1
  m4/.placeholder
  po/LINGUAS
  po/Makefile.in.in
@@ -13,7 +15,8 @@ Files: ChangeLog
  src/Makefile.am
  src/rda.pc.in
  tests/Makefile.am
-Copyright: 2018, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+ util/Makefile.am
+Copyright: 2018-2019, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 License: LGPL-2+
 Comment:
  Assuming license as found in COPYING file.
@@ -26,8 +29,11 @@ Files: src/rda.c
  src/rda_x2go.h
  src/rda_ogon.c
  src/rda_ogon.h
+ src/rda_supported_technologies.h.in
  tests/test-x2go.c
-Copyright: 2018, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+ util/rdacheck.c
+Copyright: 2018-2019, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+  2019, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 License: LGPL-2+
 
 Files: update-po.sh
@@ -153,14 +159,14 @@ Files: po/librda.pot
  po/zh_CN.po
  po/zh_HK.po
  po/zh_TW.po
-Copyright: 2018, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Copyright: 2018-2019, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 License: LGPL-2+
 Comment:
  Using same license and copyright holdership as given for the
  RDA shared library.
 
 Files: debian/*
-Copyright: 2018, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Copyright: 2018-2019, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 License: LGPL-2+ or GPL-3
 
 License: LGPL-2+
