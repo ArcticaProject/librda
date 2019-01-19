@@ -1,21 +1,21 @@
 librda.so.0 librda0 #MINVER#
+* Build-Depends-Package: librda-dev
  rda_get_remote_technology@Base 0.0.1
  rda_get_remote_technology_name@Base 0.0.1
  rda_init@Base 0.0.1
- rda_remote_technology_name_ogon@Base 0.0.2-0
- rda_remote_technology_name_x2go@Base 0.0.2-0
+ rda_remote_technology_name_ogon@Base 0.0.3
+ rda_remote_technology_name_x2go@Base 0.0.3
  rda_session_can_be_suspended@Base 0.0.1
  rda_session_is_local@Base 0.0.1
- rda_session_is_ogon@Base 0.0.2-0
+ rda_session_is_ogon@Base 0.0.3
  rda_session_is_remote@Base 0.0.1
- rda_session_is_x2go@Base 0.0.2-0
+ rda_session_is_x2go@Base 0.0.3
  rda_session_suspend@Base 0.0.1
- rda_session_suspend_ogon@Base 0.0.2-0
- rda_session_suspend_x2go@Base 0.0.2-0
+ rda_session_suspend_ogon@Base 0.0.3
+ rda_session_suspend_x2go@Base 0.0.3
  rda_session_terminate@Base 0.0.1
- rda_session_terminate_ogon@Base 0.0.2-0
- rda_session_terminate_x2go@Base 0.0.2-0
- rda_supported_technologies@Base 0.0.2-0
- rda_supported_technologies_by_name@Base 0.0.2-0
+ rda_session_terminate_ogon@Base 0.0.3
+ rda_session_terminate_x2go@Base 0.0.3
+ rda_supported_technologies@Base 0.0.3
+ rda_supported_technologies_by_name@Base 0.0.3
  remote_technology@Base 0.0.1
-*Build-Depends-Package: librda-dev
