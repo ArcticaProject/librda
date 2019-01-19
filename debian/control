@@ -34,7 +34,7 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          librda0 (= ${binary:Version}),
-         gir1.2-rda-1.0,
+         gir1.2-rda-1.0 (= ${binary:Version}),
 Description: Remote Desktop Awareness (development headers)
  This library provides an API for detecting if a desktop session
  is running inside a remote desktop session (e.g. X2Go).
