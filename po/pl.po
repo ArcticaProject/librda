@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: librda 0.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 23:57+0100\n"
+"POT-Creation-Date: 2019-01-19 01:50+0100\n"
 "PO-Revision-Date: 2018-06-27 10:45+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -32,4 +32,13 @@ msgstr ""
 
 #: ../src/rda_ogon.c:50
 msgid "OgonRDP"
+msgstr ""
+
+#: ../util/rdacheck.c:34
+#, c-format
+msgid "Currently used remote technology: %s"
+msgstr ""
+
+#: ../util/rdacheck.c:36
+msgid "RDA supports the following remote technologies:"
 msgstr ""
