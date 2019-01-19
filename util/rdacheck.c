@@ -33,7 +33,7 @@ main (int argc, char ** argv)
 	rda_init();
 	g_message(_("Currently used remote technology: %s"), rda_get_remote_technology_name());
 
-	g_message(_("RDA supports the following remote session technologies:"));
+	g_message(_("RDA supports the following remote technologies:"));
 
 	for(GList* tech = rda_supported_technologies_by_name(); tech; tech = tech->next) {
 		gchar* item = tech->data;
