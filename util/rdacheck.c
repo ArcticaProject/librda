@@ -39,6 +39,4 @@ main (int argc, char ** argv)
 		gchar* item = tech->data;
 		g_message("    * %s", item);
 	}
-
-	rda_supported_technologies_by_name();
 }
