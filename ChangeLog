@@ -1,6 +1,122 @@
-2018-11-09 19:34:59 +0100 Mike Gabriel (f58283d)
+2019-01-19 01:14:21 +0100 Mike Gabriel (10d6593)
 
-	* release 0.0.2 (HEAD -> master, tag: 0.0.2)
+	* release 0.0.3 (HEAD -> master, tag: 0.0.3)
+
+2019-01-19 01:12:13 +0100 Mike Gabriel (fd85613)
+
+	* debian/control: Used same version for librda-dev and
+          gir1.2-rda-1.0.
+
+2019-01-19 01:08:02 +0100 Mike Gabriel (b6004d6)
+
+	* debian/librda0.symbols: pre-release symbols update (once more).
+
+2019-01-19 01:07:32 +0100 Mike Gabriel (0e251cc)
+
+	* debian/copyright: Update copyright attributions.
+
+2019-01-19 00:54:49 +0100 Mike Gabriel (5b5a39d)
+
+	* debian/librda-bin.install: Install man page into librda-bin
+          bin:pkg.
+
+2019-01-19 00:53:44 +0100 Mike Gabriel (d6c899a)
+
+	* rdacheck: Add minimalistic man page.
+
+2019-01-19 00:44:11 +0100 Mike Gabriel (8e53638)
+
+	* debian/*: Add new bin:pkg librda-bin.
+
+2019-01-19 00:43:40 +0100 Mike Gabriel (3d3449c)
+
+	* tests/test-x2go.c: Add editor style hints. Fix copyright line.
+
+2019-01-19 00:41:10 +0100 Mike Gabriel (b4ba489)
+
+	* happy new year
+
+2019-01-19 00:39:47 +0100 Mike Gabriel (527f549)
+
+	* util/rdacheck.c: Update header (comment + copyright year).
+
+2019-01-19 00:34:19 +0100 Mike Gabriel (1f55f45)
+
+	* debian/librda0.symbols: Update symbols.
+
+2019-01-19 00:28:15 +0100 Mike Gabriel (5ae2fca)
+
+	* rdacheck: Add little tool that reports about what RDA detects.
+
+2019-01-19 00:26:22 +0100 Mike Gabriel (74e8e01)
+
+	* src/rda.h: Include rda_supported_technologies via non-local path.
+
+2019-01-19 00:25:29 +0100 Mike Gabriel (b03516e)
+
+	* Make rda_supported_technologies*() return GList objects.
+
+2019-01-18 23:58:31 +0100 Mike Gabriel (2f0245c)
+
+	* Update .pot file and .po files.
+
+2019-01-18 23:53:50 +0100 Mike Gabriel (b1d63c6)
+
+	* po/: Add src/rda_ogon.c to POTFILES.in.
+
+2019-01-18 23:53:18 +0100 Mike Gabriel (edbf6d7)
+
+	* Add rda_supported_technologies_by_name() function that sends
+          technology names to g_message().
+
+2019-01-18 23:51:37 +0100 Mike Gabriel (b61fd22)
+
+	* Move special remote technology pretty names to .c files providing
+          features for that technology.
+
+2019-01-18 23:44:34 +0100 Mike Gabriel (3f5cd65)
+
+	* Fix wrong WITH_REMOTE_AWARENESS_*** macro names.
+
+2019-01-18 22:53:49 +0100 Mike Gabriel (3aab09c)
+
+	* debian/changelog: post-release version bump
+
+2019-01-11 16:19:20 +0000 Louies (6fbe510)
+
+	* Translated using Weblate (Chinese (Traditional))
+
+2019-01-08 15:02:15 +0000 Louies (a7a8175)
+
+	* Translated using Weblate (Chinese (Traditional))
+
+2018-12-30 15:16:29 +0000 Alex (02f6310)
+
+	* Translated using Weblate (Russian)
+
+2018-11-27 19:59:12 +0000 Kristjan Räts (e4a1600)
+
+	* Translated using Weblate (Estonian)
+
+2018-11-20 17:43:47 +0000 Whod (2ab6704)
+
+	* Translated using Weblate (Bulgarian)
+
+2018-11-18 06:38:37 +0000 ssantos (d304c88)
+
+	* Translated using Weblate (Portuguese)
+
+2018-11-13 11:10:48 +0000 Ryo Nakano (1591e13)
+
+	* Translated using Weblate (Japanese)
+
+2018-11-10 18:54:11 +0000 hadii (971f81d)
+
+	* Translated using Weblate (Persian)
+
+2018-11-09 19:34:59 +0100 Mike Gabriel (b912380)
+
+	* release 0.0.2 (tag: 0.0.2)
 
 2018-11-09 19:34:26 +0100 Mike Gabriel (6388ef6)
 

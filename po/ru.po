@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: librda 0.0.2\n"
+"Project-Id-Version: librda 0.0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-18 23:57+0100\n"
 "PO-Revision-Date: 2018-12-31 16:08+0000\n"
