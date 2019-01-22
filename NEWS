@@ -1,0 +1,21 @@
+Overview of changes in librda 0.0.4
+
+    - Fix include path (Cflags: field) in rda.pc file.
+
+Overview of changes in librda 0.0.3
+
+    - Fix wrong WITH_REMOTE_AWARENESS_*** macro names.
+    - Add rdacheck utility.
+    - Update translations.
+
+Overview of changes in libra 0.0.2
+
+    - Add GObject Introspection support.
+    - Provide include file that honors what remote desktop environments are
+      supported, so that other software can "know" what is supported and what
+      was disabled at build time.
+    - Update translations.
+
+Overview of changes in librda 0.0.1
+
+    - Initial release.
