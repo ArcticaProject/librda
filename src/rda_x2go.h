@@ -24,7 +24,6 @@
 #ifndef RDA_X2GO_H
 #define RDA_X2GO_H
 
-#include <config.h>
 #include <glib.h>
 
 #include <rda.h>

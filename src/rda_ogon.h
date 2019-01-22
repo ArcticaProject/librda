@@ -24,7 +24,6 @@
 #ifndef RDA_OGON_H
 #define RDA_OGON_H
 
-#include <config.h>
 #include <glib.h>
 
 #include <rda.h>

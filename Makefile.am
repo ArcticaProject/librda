@@ -1,16 +1,25 @@
+NULL =
+
 SUBDIRS = data src util po
 
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
 if WANT_TESTS
 
-SUBDIRS += \
-        tests
+SUBDIRS +=				\
+        tests				\
+        $(NULL)
 
 tests: librda
 
 endif
 
+DISTCHECK_CONFIGURE_FLAGS =		\
+    --enable-x2go			\
+    --enable-ogon			\
+    --disable-silent-rules		\
+    --enable-introspection		\
+    $(NULL)
 
 MAINTAINERCLEANFILES = \
 	$(srcdir)/aclocal.m4 \

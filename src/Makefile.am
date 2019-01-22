@@ -17,14 +17,12 @@ CLEANFILES += $(st_file)
 EXTRA_DIST += $(st_file).in
 BUILT_SOURCES += $(st_file)
 
-rda_headers =				\
-	rda_supported_technologies.h	\
-	rda.h				\
-	$(NULL)
-
 librdaincludedir = $(includedir)/rda
 librdainclude_HEADERS =			\
-	$(rda_headers)			\
+	rda_supported_technologies.h	\
+	rda_ogon.h			\
+	rda_x2go.h			\
+	rda.h				\
 	$(NULL)
 
 librda_la_SOURCES =			\
@@ -56,7 +54,7 @@ introspection_sources = $(librdainclude_HEADERS)	\
 
 rda-1.0.gir: librda.la
 rda_1_0_gir_INCLUDES = GObject-2.0 GLib-2.0
-rda_1_0_gir_CFLAGS = $(librda_la_CFLAGS)
+rda_1_0_gir_CFLAGS = $(librda_la_CFLAGS) -I$(srcdir)
 rda_1_0_gir_LIBS = librda.la
 rda_1_0_gir_FILES = $(introspection_sources)
 
