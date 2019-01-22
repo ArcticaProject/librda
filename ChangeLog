@@ -1,6 +1,28 @@
-2019-01-19 01:14:21 +0100 Mike Gabriel (10d6593)
+2019-01-22 10:41:46 +0100 Mike Gabriel (6687151)
 
-	* release 0.0.3 (HEAD -> master, tag: 0.0.3)
+	* release 0.0.4 (HEAD -> master, tag: 0.0.4)
+
+2019-01-20 00:26:24 +0100 Mike Gabriel (d308efa)
+
+	* src/rda.pc.in: Fix Cflags: field. Use rda/ subfolder as include
+          path.
+
+2019-01-19 01:50:32 +0100 Mike Gabriel (9088dd7)
+
+	* update translation files
+
+2019-01-19 01:49:54 +0100 Mike Gabriel (0ba0382)
+
+	* util/rdacheck.c: Amend output string slightly.
+
+2019-01-19 01:48:41 +0100 Mike Gabriel (91f14c0)
+
+	* util/rdacheck.c: Drop non-functional call to
+          rda_supported_technologies_by_name().
+
+2019-01-19 01:14:21 +0100 Mike Gabriel (31fc50a)
+
+	* release 0.0.3 (tag: 0.0.3)
 
 2019-01-19 01:12:13 +0100 Mike Gabriel (fd85613)
 

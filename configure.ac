@@ -1,5 +1,5 @@
 AC_INIT([librda],
-        [0.0.3],
+        [0.0.4],
         [https://github.com/ArcticaProject/librda/issues],
         [librda],
         [https://github.com/ArcticaProject/librda])
