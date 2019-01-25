@@ -76,8 +76,6 @@ AC_ARG_ENABLE([ogon],
               [],
               [enable_ogon=no])
 
-echo "$enable_ogon"
-
 if test "x$enable_ogon" == "xyes"; then
     SUPPORTED_TECHNOLOGIES="$SUPPORTED_TECHNOLOGIES OGON"
 fi
