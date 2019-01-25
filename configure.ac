@@ -61,23 +61,25 @@ dnl enable/disable awarenesses
 SUPPORTED_TECHNOLOGIES=""
 
 AC_ARG_ENABLE([x2go],
-              [AS_HELP_STRING([--enable-x2go],
-                              [enable awareness of X2Go sessions])],
-              [enable_x2go=yes])
-if test "x$enable_x2go" != "x"; then
+              [AC_HELP_STRING([--enable-x2go=@<:@yes/no@:>@],
+                              [Enable X2Go awareness @<:@default=no@:>@])],
+              [],
+              [enable_x2go=no])
+
+if test "x$enable_x2go" == "xyes"; then
     SUPPORTED_TECHNOLOGIES="$SUPPORTED_TECHNOLOGIES X2GO"
-else
-    enable_x2go="no"
 fi
 
 AC_ARG_ENABLE([ogon],
-              [AS_HELP_STRING([--enable-ogon],
-                              [enable awareness of Ogon sessions])],
-              [enable_ogon=yes])
-if test "x$enable_ogon" != "x"; then
+              [AC_HELP_STRING([--enable-ogon=@<:@yes/no@:>@],
+                              [Enable Ogon awareness @<:@default=no@:>@])],
+              [],
+              [enable_ogon=no])
+
+echo "$enable_ogon"
+
+if test "x$enable_ogon" == "xyes"; then
     SUPPORTED_TECHNOLOGIES="$SUPPORTED_TECHNOLOGIES OGON"
-else
-    enable_ogon="no"
 fi
 
 # make them available for automake
