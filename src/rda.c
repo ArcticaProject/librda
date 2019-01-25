@@ -176,7 +176,7 @@ rda_session_terminate(void)
 GList *
 rda_supported_technologies(void)
 {
-	GList * tech_list;
+	GList * tech_list = NULL;
 
 #ifdef WITH_REMOTE_AWARENESS_X2GO
 	tech_list = g_list_append (tech_list,  GINT_TO_POINTER(REMOTE_TECHNOLOGY_X2GO));
@@ -192,7 +192,7 @@ rda_supported_technologies(void)
 GList *
 rda_supported_technologies_by_name(void)
 {
-	GList * tech_list_by_name;
+	GList * tech_list_by_name = NULL;
 
 #ifdef WITH_REMOTE_AWARENESS_X2GO
 	tech_list_by_name = g_list_append (tech_list_by_name, rda_remote_technology_name_x2go());
