@@ -1,6 +1,32 @@
-2019-01-22 10:41:46 +0100 Mike Gabriel (6687151)
+2019-02-03 01:47:56 +0100 Mike Gabriel (3170c1a)
 
-	* release 0.0.4 (HEAD -> master, tag: 0.0.4)
+	* release 0.0.5 (HEAD -> master, tag: 0.0.5)
+
+2019-01-25 23:09:44 +0100 Mike Gabriel (2f2681e)
+
+	* configure.ac: Remove line of debug code.
+
+2019-01-25 23:09:13 +0100 Mike Gabriel (e9b4abf)
+
+	* configure.ac: Fix enable/disable switches for supported RD
+          technologies.
+
+2019-01-25 22:45:15 +0100 Mike Gabriel (c6d7ccf)
+
+	* src/rda.c: Initialize GList objects in
+          rda_supported_technologies{,_by_name}() functions.
+
+2019-01-22 16:12:29 +0100 Mike Gabriel (5aa4cf0)
+
+	* Support 'make distcheck'.
+
+2019-01-22 14:06:30 +0100 Mike Gabriel (5668efb)
+
+	* Add NEWS file that contains condensed ChangeLog items.
+
+2019-01-22 10:41:46 +0100 Mike Gabriel (113e97c)
+
+	* release 0.0.4 (tag: 0.0.4)
 
 2019-01-20 00:26:24 +0100 Mike Gabriel (d308efa)
 
