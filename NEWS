@@ -1,3 +1,10 @@
+Overview of changes in librda 0.0.5
+
+    - Fix make distcheck.
+    - Include technology related header files as public API.
+    - Get --enable-<remote-tech> options working as one would
+      expect it.
+
 Overview of changes in librda 0.0.4
 
     - Fix include path (Cflags: field) in rda.pc file.
