@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: librda 0.0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-19 01:50+0100\n"
+"POT-Creation-Date: 2019-04-01 14:17+0200\n"
 "PO-Revision-Date: 2018-09-28 13:35+0000\n"
 "Last-Translator: Володимир Бриняк <bardvv@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/arctica-"
@@ -20,19 +20,19 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.2-dev\n"
 
-#: ../src/rda.c:100
+#: ../src/rda.c:99
 msgid "local"
 msgstr "локальний"
 
-#: ../src/rda.c:116
+#: ../src/rda.c:115
 msgid "unknown"
 msgstr "невідомий"
 
-#: ../src/rda_x2go.c:50
+#: ../src/rda_x2go.c:49
 msgid "X2Go"
 msgstr "X2Go"
 
-#: ../src/rda_ogon.c:50
+#: ../src/rda_ogon.c:49
 msgid "OgonRDP"
 msgstr "OgonRDP"
 
