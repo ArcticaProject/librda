@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: librda 0.0.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-01 14:17+0200\n"
-"PO-Revision-Date: 2018-09-13 20:21+0000\n"
+"PO-Revision-Date: 2019-04-18 21:04+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/arctica-"
-"framework/librda/nb/>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
+"arctica-framework/librda/nb_NO/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.6-dev\n"
 
 #: ../src/rda.c:99
 msgid "local"
@@ -38,10 +38,11 @@ msgid "OgonRDP"
 msgstr "OgonRDP"
 
 #: ../util/rdacheck.c:34
-#, c-format
+#, c-format, fuzzy
 msgid "Currently used remote technology: %s"
-msgstr ""
+msgstr "Fjernteknologi brukt nå: %s"
 
 #: ../util/rdacheck.c:36
+#, fuzzy
 msgid "RDA supports the following remote technologies:"
-msgstr ""
+msgstr "RDA støtter følgende fjernteknologier:"
