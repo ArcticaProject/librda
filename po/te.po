@@ -8,21 +8,25 @@ msgstr ""
 "Project-Id-Version: librda 0.0.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-01 14:17+0200\n"
-"PO-Revision-Date: 2018-06-27 10:45+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-08-10 09:26+0000\n"
+"Last-Translator: VERMAREDDY SANTHOSH REDDY <santhosh.vermareddy786@gmail.com>"
+"\n"
+"Language-Team: Telugu <https://hosted.weblate.org/projects/arctica-framework/"
+"librda/te/>\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.8-dev\n"
 
 #: ../src/rda.c:99
 msgid "local"
-msgstr ""
+msgstr "sthanika"
 
 #: ../src/rda.c:115
 msgid "unknown"
-msgstr ""
+msgstr "theliyani"
 
 #: ../src/rda_x2go.c:49
 msgid "X2Go"
@@ -35,7 +39,7 @@ msgstr ""
 #: ../util/rdacheck.c:34
 #, c-format
 msgid "Currently used remote technology: %s"
-msgstr ""
+msgstr "ఛుర్రెంత్ల్య్ ఉసెద్ రెమొతె తెచ్నొలొగ్య్"
 
 #: ../util/rdacheck.c:36
 msgid "RDA supports the following remote technologies:"
