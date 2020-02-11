@@ -8,35 +8,38 @@ msgstr ""
 "Project-Id-Version: librda 0.0.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-01 14:17+0200\n"
-"PO-Revision-Date: 2018-06-27 10:45+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-02-12 07:50+0000\n"
+"Last-Translator: Arif Fahmi Fisal <cyber_sec@rocketmail.com>\n"
+"Language-Team: Malay <https://hosted.weblate.org/projects/arctica-framework/"
+"librda/ms/>\n"
 "Language: ms\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: ../src/rda.c:99
 msgid "local"
-msgstr ""
+msgstr "lokal"
 
 #: ../src/rda.c:115
 msgid "unknown"
-msgstr ""
+msgstr "tidak diketahui"
 
 #: ../src/rda_x2go.c:49
 msgid "X2Go"
-msgstr ""
+msgstr "X2Go"
 
 #: ../src/rda_ogon.c:49
 msgid "OgonRDP"
-msgstr ""
+msgstr "OgonRDP"
 
 #: ../util/rdacheck.c:34
 #, c-format
 msgid "Currently used remote technology: %s"
-msgstr ""
+msgstr "Kini teknologi kawalan jauh digunakan: %s"
 
 #: ../util/rdacheck.c:36
 msgid "RDA supports the following remote technologies:"
-msgstr ""
+msgstr "RDA menyokong teknologi kawalan jauh berikut:"
