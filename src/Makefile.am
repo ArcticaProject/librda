@@ -32,6 +32,7 @@ librda_la_SOURCES =			\
 	$(NULL)
 
 librda_la_CFLAGS =			\
+	-Wall -Werror			\
 	$(LIBRDA_CFLAGS)		\
 	$(NULL)
 
