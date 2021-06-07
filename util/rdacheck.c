@@ -28,7 +28,7 @@ Copyright 2019, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 #include <rda.h>
 
 int
-main (int argc, char ** argv)
+main (int __attribute__((unused)) argc, char __attribute__((unused)) **argv)
 {
 	rda_init();
 	g_message(_("Currently used remote technology: %s"), rda_get_remote_technology_name());
