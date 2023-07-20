@@ -26,12 +26,14 @@ Copyright 2019, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 #include <glib/gi18n.h>
 
 #include <rda.h>
+#include <rda_protocol.h>
 
 int
 main (int __attribute__((unused)) argc, char __attribute__((unused)) **argv)
 {
 	rda_init();
 	g_message(_("Currently used remote technology: %s"), rda_get_remote_technology_name());
+	g_message(_("Currently used protocol: %s"), rda_get_protocol_name());
 
 	g_message(_("RDA supports the following remote technologies:"));
 
@@ -39,4 +41,13 @@ main (int __attribute__((unused)) argc, char __attribute__((unused)) **argv)
 		gchar* item = tech->data;
 		g_message("    * %s", item);
 	}
+
+	g_message(_("RDA supports the following protocols:"));
+
+	GList *proto = NULL;
+	for(proto = rda_supported_protocols_by_name(); proto; proto = proto->next) {
+		gchar* item = proto->data;
+		g_message("    * %s", item);
+	}
+	g_list_free_full(g_steal_pointer(&proto), free);
 }
