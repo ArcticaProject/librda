@@ -27,8 +27,14 @@
 #include <glib.h>
 
 #include <rda.h>
+#include <rda_protocol.h>
 
 #ifdef WITH_REMOTE_AWARENESS_OGON
+
+extern const rda_protocol_t
+rda_supported_protocols_ogon[];
+extern const gsize
+rda_supported_protocols_ogon_len;
 
 gboolean
 rda_session_is_ogon (void);
