@@ -19,12 +19,15 @@ BUILT_SOURCES += $(st_file)
 
 librdaincludedir = $(includedir)/rda
 librdainclude_HEADERS =			\
-	rda_supported_technologies.h	\
 	rda_ogon.h			\
 	rda_protocol.h			\
 	rda_util.h			\
 	rda_x2go.h			\
 	rda.h				\
+	$(NULL)
+
+nodist_librdainclude_HEADERS =		\
+	$(st_file)			\
 	$(NULL)
 
 librda_la_SOURCES =			\
@@ -53,8 +56,10 @@ INTROSPECTION_SCANNER_ARGS = --add-include-path=$(srcdir) --warn-all
 INTROSPECTION_COMPILER_ARGS = --includedir=$(srcdir)
 
 if HAVE_INTROSPECTION
-introspection_sources = $(librdainclude_HEADERS)	\
-	$(librda_la_SOURCES)				\
+introspection_sources =			\
+	$(librdainclude_HEADERS)	\
+	$(nodist_librdainclude_HEADERS)	\
+	$(librda_la_SOURCES)		\
 	$(NULL)
 
 rda-1.0.gir: librda.la
