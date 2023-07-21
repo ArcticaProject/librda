@@ -13,6 +13,7 @@ rdacheck_CFLAGS =			\
 	-Wall -Werror			\
 	$(LIBRDA_CFLAGS)		\
 	-I$(top_srcdir)/src/		\
+	-I../src			\
 	-DBUILD_DIR="\"$(builddir)\""	\
 	$(NULL)
 
