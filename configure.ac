@@ -26,7 +26,7 @@ AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 #   change to C+1:0:0
 # - If the interface is the same as the previous version, change to C:R+1:A
 
-LT_VERSION=18:4:1
+LT_VERSION=19:4:2
 AC_SUBST(LT_VERSION)
 
 AM_MAINTAINER_MODE
