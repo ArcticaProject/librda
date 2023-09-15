@@ -1,4 +1,6 @@
 src/rda.c
 src/rda_x2go.c
 src/rda_ogon.c
+src/rda_protocol.c
+src/rda_util.c
 util/rdacheck.c

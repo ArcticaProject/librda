@@ -25,8 +25,84 @@
 #include <glib/gi18n.h>
 
 #include <rda.h>
+#include <rda_protocol.h>
+#include <rda_util.h>
 
 #ifdef WITH_REMOTE_AWARENESS_X2GO
+
+const rda_protocol_t
+rda_supported_protocols_x2go[] = { RDA_PROTOCOL_NX, RDA_PROTOCOL_KDRIVE };
+const gsize
+rda_supported_protocols_x2go_len = static_arr_size(rda_supported_protocols_x2go);
+
+static gboolean
+rda_x2go_session_is_kdrive (const gchar *session_id)
+{
+	gboolean ret = FALSE;
+	const gchar *ptr = session_id;
+
+	/* Sanity check. */
+	if (!(ptr))
+	{
+		return (ret);
+	}
+
+	/* Skip user name. */
+	while ((ptr) && (*(ptr)) && ('-' != (*(ptr))))
+	{
+		++ptr;
+	}
+
+	if ((!(ptr)) || (!(*(ptr++))))
+	{
+		return (ret);
+	}
+
+	/* Skip port. */
+	while ((ptr) && (*(ptr)) && ('-' != (*(ptr))))
+	{
+		++ptr;
+	}
+
+	if ((!(ptr)) || (!(*(ptr++))))
+	{
+		return (ret);
+	}
+
+	/* Skip date. */
+	while ((ptr) && (*(ptr)) && ('_' != (*(ptr))))
+	{
+		++ptr;
+	}
+
+	if ((!(ptr)) || (!(*(ptr++))))
+	{
+		return (ret);
+	}
+
+	/* Don't supply a null pointer to strncmp() by accident. */
+	if (!(ptr))
+	{
+		return (ret);
+	}
+
+	/* Check for "st". */
+	if (!(strncmp("st", ptr, 2)))
+	{
+		ptr += 2;
+
+		/*
+		 * Next character must be 'K' for KDrive sessions.
+		 * Note that this might change in future versions.
+		 */
+		if ((ptr) && ('K' == (*(ptr))))
+		{
+			ret = TRUE;
+		}
+	}
+
+	return (ret);
+}
 
 gboolean
 rda_session_is_x2go (void)
@@ -34,9 +110,17 @@ rda_session_is_x2go (void)
 	if (remote_technology == REMOTE_TECHNOLOGY_X2GO)
 		return TRUE;
 
-	if (g_getenv("X2GO_SESSION"))
+	const gchar *session_id = g_getenv("X2GO_SESSION");
+	if (session_id)
 	{
 		remote_technology = REMOTE_TECHNOLOGY_X2GO;
+		rda_protocol = RDA_PROTOCOL_NX;
+
+		if (rda_x2go_session_is_kdrive(session_id))
+		{
+			rda_protocol = RDA_PROTOCOL_KDRIVE;
+		}
+
 		return TRUE;
 	}
 

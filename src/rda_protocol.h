@@ -1,8 +1,8 @@
 /* -*- Mode: C; c-set-style: linux indent-tabs-mode: t; c-basic-offset: 8; tab-width: 8 -*- */
 
-/* rda_ogon.h - Remote Desktop Awareness for Ogon RDP Sessions
+/* rda_protocol.h - Generic protocol support for remote sessions
 
-   Copyright (C) 2018-2019 Mike Gabriel
+   Copyright (C) 2023 Mihai Moldovan <ionic@ionic.de>
    All rights reserved.
 
    The RDA Library is free software; you can redistribute it and/or
@@ -18,36 +18,41 @@
    You should have received a copy of the GNU Library General Public
    License along with the Mate Library; see the file COPYING.LIB.  If not,
    write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
-   Boston, MA 02110-1301, USA.
+   Boston, MA  02110-1301, USA.
  */
 
-#ifndef RDA_OGON_H
-#define RDA_OGON_H
+#ifndef RDA_PROTOCOL_H
+#define RDA_PROTOCOL_H
 
 #include <glib.h>
 
-#include <rda.h>
-#include <rda_protocol.h>
+G_BEGIN_DECLS
 
-#ifdef WITH_REMOTE_AWARENESS_OGON
+typedef enum {
+	RDA_PROTOCOL_UNKNOWN = 0,
+	RDA_PROTOCOL_NONE,
+	RDA_PROTOCOL_VNC,
+	RDA_PROTOCOL_RDP,
+	RDA_PROTOCOL_NX,
+	RDA_PROTOCOL_KDRIVE,
+	RDA_PROTOCOL_MAX,
+} rda_protocol_t;
 
-extern const rda_protocol_t
-rda_supported_protocols_ogon[];
-extern const gsize
-rda_supported_protocols_ogon_len;
+extern rda_protocol_t
+rda_protocol;
 
-gboolean
-rda_session_is_ogon (void);
+guint
+rda_get_protocol(void);
 
-gchar *
-rda_remote_technology_name_ogon(void);
+gchar*
+rda_get_protocol_name(void);
 
-gboolean
-rda_session_suspend_ogon (void);
+GList*
+rda_supported_protocols(void);
 
-gboolean
-rda_session_terminate_ogon (void);
+GList*
+rda_supported_protocols_by_name(void);
 
-#endif /* WITH_REMOTE_AWARENESS_OGON */
+G_END_DECLS
 
-#endif /* RDA_OGON_H */
+#endif /* RDA_PROTOCOL_H */

@@ -1,8 +1,8 @@
 /* -*- Mode: C; c-set-style: linux indent-tabs-mode: t; c-basic-offset: 8; tab-width: 8 -*- */
 
-/* rda_ogon.h - Remote Desktop Awareness for Ogon RDP Sessions
+/* rda_util.c - Miscellaneous helpers
 
-   Copyright (C) 2018-2019 Mike Gabriel
+   Copyright (C) 2023 Mihai Moldovan <ionic@ionic.de>
    All rights reserved.
 
    The RDA Library is free software; you can redistribute it and/or
@@ -21,33 +21,7 @@
    Boston, MA 02110-1301, USA.
  */
 
-#ifndef RDA_OGON_H
-#define RDA_OGON_H
-
 #include <glib.h>
+#include <glib/gi18n.h>
 
-#include <rda.h>
-#include <rda_protocol.h>
-
-#ifdef WITH_REMOTE_AWARENESS_OGON
-
-extern const rda_protocol_t
-rda_supported_protocols_ogon[];
-extern const gsize
-rda_supported_protocols_ogon_len;
-
-gboolean
-rda_session_is_ogon (void);
-
-gchar *
-rda_remote_technology_name_ogon(void);
-
-gboolean
-rda_session_suspend_ogon (void);
-
-gboolean
-rda_session_terminate_ogon (void);
-
-#endif /* WITH_REMOTE_AWARENESS_OGON */
-
-#endif /* RDA_OGON_H */
+#include <rda_util.h>

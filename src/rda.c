@@ -27,6 +27,7 @@
 #include <rda.h>
 #include <rda_ogon.h>
 #include <rda_x2go.h>
+#include <rda_protocol.h>
 
 guint
 remote_technology = REMOTE_TECHNOLOGY_UNCHECKED;
@@ -46,6 +47,7 @@ rda_session_is_local(void)
 	if (g_getenv("XDG_SEAT"))
 	{
 		remote_technology = REMOTE_TECHNOLOGY_NONE;
+		rda_protocol = RDA_PROTOCOL_NONE;
 		return TRUE;
 	}
 
@@ -57,7 +59,7 @@ rda_session_is_remote (void)
 {
 
 	if (rda_session_is_local())
-		remote_technology = REMOTE_TECHNOLOGY_NONE;
+		return FALSE;
 #ifdef WITH_REMOTE_AWARENESS_X2GO
 	else if (rda_session_is_x2go())
 		return TRUE;

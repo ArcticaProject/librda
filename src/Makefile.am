@@ -21,6 +21,8 @@ librdaincludedir = $(includedir)/rda
 librdainclude_HEADERS =			\
 	rda_supported_technologies.h	\
 	rda_ogon.h			\
+	rda_protocol.h			\
+	rda_util.h			\
 	rda_x2go.h			\
 	rda.h				\
 	$(NULL)
@@ -29,6 +31,8 @@ librda_la_SOURCES =			\
 	rda.c				\
 	rda_x2go.c			\
 	rda_ogon.c			\
+	rda_protocol.c			\
+	rda_util.c			\
 	$(NULL)
 
 librda_la_CFLAGS =			\

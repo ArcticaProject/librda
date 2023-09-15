@@ -25,8 +25,16 @@
 #include <glib/gi18n.h>
 
 #include <rda.h>
+#include <rda_ogon.h>
+#include <rda_protocol.h>
+#include <rda_util.h>
 
 #ifdef WITH_REMOTE_AWARENESS_OGON
+
+const rda_protocol_t
+rda_supported_protocols_ogon[] = { RDA_PROTOCOL_RDP };
+const gsize
+rda_supported_protocols_ogon_len = static_arr_size(rda_supported_protocols_ogon);
 
 gboolean
 rda_session_is_ogon (void)
@@ -37,6 +45,7 @@ rda_session_is_ogon (void)
 	if (g_getenv("OGON_SID"))
 	{
 		remote_technology = REMOTE_TECHNOLOGY_OGON;
+		rda_protocol = RDA_PROTOCOL_RDP;
 		return TRUE;
 	}
 
