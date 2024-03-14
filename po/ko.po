@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: librda 0.0.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-01 14:17+0200\n"
-"PO-Revision-Date: 2019-04-27 07:47+0000\n"
-"Last-Translator: Jun Hyung Shin <shmishmi79@gmail.com>\n"
+"PO-Revision-Date: 2024-03-15 17:12+0000\n"
+"Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/arctica-framework/"
 "librda/ko/>\n"
 "Language: ko\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: ../src/rda.c:99
 msgid "local"
@@ -38,8 +38,8 @@ msgstr "OgonRDP"
 #: ../util/rdacheck.c:34
 #, c-format
 msgid "Currently used remote technology: %s"
-msgstr ""
+msgstr "현재 사용되는 원격 기술: %s"
 
 #: ../util/rdacheck.c:36
 msgid "RDA supports the following remote technologies:"
-msgstr ""
+msgstr "RDA는 다음과 같은 원격 기술을 지원합니다:"
