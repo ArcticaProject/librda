@@ -8,37 +8,39 @@ msgstr ""
 "Project-Id-Version: librda 0.0.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-01 14:17+0200\n"
-"PO-Revision-Date: 2018-06-27 10:45+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-09-29 20:15+0000\n"
+"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
+"Language-Team: Romanian <https://hosted.weblate.org/projects/"
+"arctica-framework/librda/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: ../src/rda.c:99
 msgid "local"
-msgstr ""
+msgstr "local"
 
 #: ../src/rda.c:115
 msgid "unknown"
-msgstr ""
+msgstr "necunoscut"
 
 #: ../src/rda_x2go.c:49
 msgid "X2Go"
-msgstr ""
+msgstr "X2Go"
 
 #: ../src/rda_ogon.c:49
 msgid "OgonRDP"
-msgstr ""
+msgstr "OgonRDP"
 
 #: ../util/rdacheck.c:34
 #, c-format
 msgid "Currently used remote technology: %s"
-msgstr ""
+msgstr "Tehnologia la distanță utilizată în prezent: %s"
 
 #: ../util/rdacheck.c:36
 msgid "RDA supports the following remote technologies:"
-msgstr ""
+msgstr "RDA admite următoarele tehnologii la distanță:"
