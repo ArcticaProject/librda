@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: librda 0.0.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-01 14:17+0200\n"
-"PO-Revision-Date: 2025-11-11 11:05+0000\n"
+"PO-Revision-Date: 2025-11-15 03:51+0000\n"
 "Last-Translator: BoneNI <bounkirdni@gmail.com>\n"
 "Language-Team: Lao <https://hosted.weblate.org/projects/arctica-framework/"
 "librda/lo/>\n"
@@ -29,11 +29,11 @@ msgstr "ບໍ່ຮູ້ຈັກ"
 
 #: ../src/rda_x2go.c:49
 msgid "X2Go"
-msgstr ""
+msgstr "X2Go"
 
 #: ../src/rda_ogon.c:49
 msgid "OgonRDP"
-msgstr ""
+msgstr "OgonRDP"
 
 #: ../util/rdacheck.c:34
 #, c-format
@@ -42,4 +42,4 @@ msgstr "ປັດຈຸບັນໃຊ້ເທກໂນໂລຊີໄລຍະ
 
 #: ../util/rdacheck.c:36
 msgid "RDA supports the following remote technologies:"
-msgstr ""
+msgstr "RDA ຮອງຮັບເທກໂນໂລຊີໄລຍະໄກດັ່ງຕໍ່ໄປນີ້:"
